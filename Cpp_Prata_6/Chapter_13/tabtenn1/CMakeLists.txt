@@ -1,5 +1,5 @@
-project(tabtenn1)
-cmake_minimum_required(VERSION 2.8)
+project(tabtenn1 CXX)
+cmake_minimum_required(VERSION 2.8.12)
+add_compile_options(-std=c++11 -Wall)
 aux_source_directory(. SRC_LIST)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
-
